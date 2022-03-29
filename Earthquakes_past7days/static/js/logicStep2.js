@@ -28,6 +28,9 @@ let map = L.map('mapid', {
     layers: [streets]
 })
 
+// Pass our map layers into our layers control and add the layers control to the map.
+L.control.layers(baseMaps).addTo(map);
+
 // Retrieve the earthquake GeoJSON data.
 d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson").then(function(data) {
     // This function returns the style data for each of the earthquakes we plot on
