@@ -29,7 +29,7 @@ let map = L.map('mapid', {
 })
 
 // Pass our map layers into our layers control and add the layers control to the map.
-//L.control.layers(baseMaps).addTo(map);
+L.control.layers(baseMaps).addTo(map);
 
 //let torontoHoods = "https://raw.githubusercontent.com/jtaulman/Mapping_Earthquakes/main/torontoNeighborhoods.json";
 
